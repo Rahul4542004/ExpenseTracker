@@ -22,15 +22,13 @@ export default function App()
     setTransactions(updatedTransactions);
   }
   return(
-    <div className = 'outerContainer'>
       <div className = 'innerContainer'>
         <Header/>
         <Balance transactions={transactions}/>
         <IncomeExpense transactions={transactions}/>
         <TransactionList transactions={transactions} deleteItem={deleteItem}/>
         <AddTransaction addTransaction={addTransaction}/>
-        </div>
-    </div>
+      </div>
   )
 }
 const initialState = [
