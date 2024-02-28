@@ -44,7 +44,12 @@ body{
     display : none;
     color : white;
     font-size : 20px;
+    transition-property: all;
     background-color: red;
+}
+.transactionButton:hover{
+    color : red;
+    background-color: white;
 }
 .transactionItem{
     position : relative;
