@@ -30,6 +30,11 @@ body{
     font-size : 24px;
     border-radius: 10px;
     margin-bottom : 20px;
+    transition-property: all;
+}
+.button:hover{
+    background-color: yellow;
+    color : darkgreen;
 }
 .input{
     width : 200px;
@@ -101,7 +106,7 @@ body{
 
 .warn.warning {
   display: inline-block;
-
+  transition-property: all;
   top: 0.225em;
 
   width: 1.15em;
@@ -140,3 +145,24 @@ body{
   font-weight: bold;
   color: #333;
 }
+.tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: #f44336;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .warning-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
