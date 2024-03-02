@@ -5,8 +5,9 @@ export const Balance = ({transactions}) => {
   let totalBalance = amount.reduce((acc,item) => acc += item,0);
   return (
     <div style={{ display: 'flex', alignItems: 'center',marginBottom : '10px',marginTop : '-20px'}}>
-    <h2 style = {{fontSize:'40px'}}>Your Balance : </h2>
-    <h2 style={{
+    <h2 className = 'heading' style = {{fontSize:'40px'}}>Your Balance : </h2>
+    <h2 className='alternateHeading'>Balance : </h2>
+    <h2 className = 'balance' style={{
       color: totalBalance < 0 ? 'red' : 'green',
       marginLeft: '5px',
       fontSize : '40px'

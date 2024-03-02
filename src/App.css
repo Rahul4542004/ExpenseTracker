@@ -1,7 +1,6 @@
 .innerContainer{
-    height: 100%;
     margin-top : 50px;
-    margin-bottom: -150px;
+    margin-bottom: 70px;
     display : flex;
     align-items: center;
     width : 600px;
@@ -152,4 +151,23 @@ body{
   font-size: 0.65em;
   font-weight: bold;
   color: #333;
+}
+.alternateHeading{
+    display: none;
+    text-align: center;
+}
+@media screen and (min-width : 350px) and (max-width : 650px)
+{
+    .innerContainer,.history,.form{
+        width : 350px;
+    }
+    .transactionItem{
+        width : 300px;
+    }
+    .alternateHeading{
+        display: block;
+    }
+    .heading{
+        display: none;
+    }
 }
