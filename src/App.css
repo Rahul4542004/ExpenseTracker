@@ -156,13 +156,31 @@ body{
     display: none;
     text-align: center;
 }
-@media screen and (min-width : 350px) and (max-width : 650px)
+@media screen and (min-width : 400px) and (max-width : 650px)
 {
     .innerContainer,.history,.form{
         width : 350px;
     }
     .transactionItem{
         width : 300px;
+    }
+    .alternateHeading{
+        display: block;
+    }
+    .heading{
+        display: none;
+    }
+}
+@media  screen and (max-width : 399px) {
+    .history,.form{
+        width : 300px;
+    }
+    .innerContainer{
+        width : 300px;
+        margin-left : 20px;
+    }
+    .transactionItem{
+        width : 250px;
     }
     .alternateHeading{
         display: block;
