@@ -2,6 +2,6 @@ import React from 'react'
 
 export const Header = () => {
   return (
-    <h1>Expense Tracker</h1>
+    <h1 style={{textAlign:'center',color:'white',fontSize:'50px'}}>Expense Tracker</h1>
   )
 }

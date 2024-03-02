@@ -1,5 +1,7 @@
 .innerContainer{
     height: 100%;
+    margin-top : 50px;
+    margin-bottom: -150px;
     display : flex;
     align-items: center;
     width : 600px;
@@ -10,6 +12,7 @@
 body{
     display: flex;
     justify-content: center;
+    align-items: space-around;
     background-color: rgb(0,0,0,0.9); 
     padding : 0;
     margin : 0;
